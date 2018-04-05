@@ -1,0 +1,7 @@
+<h1>Edit entry</h1>
+<%= simple_form_for Entry.find(params[:id]) do |f| %>
+<%= f.input :date, placeholder: 'dd/mm/yyyy' %>
+<%= f.input :note %>
+<%= f.button :submit %>
+<% end %>
+<%= link_to 'Back', entries_path %>
